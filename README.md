@@ -39,3 +39,27 @@ O sistema utiliza um banco de dados relacional para armazenar as informações, 
 
 ## CONCLUSÃO  
 O desenvolvimento deste sistema permitiu aplicar conceitos de análise e modelagem de sistemas orientados a objetos, além de boas práticas de programação e banco de dados. O sistema proporciona uma solução eficiente para o gerenciamento de cadastros na universidade, permitindo maior controle e organização das informações.  
+
+##Diagramas
+   Diagramas da primeira fase do projeto:
+   
+ ![Diagrama de Caso de Uso](diagramas/casos-de-uso.jpg)
+ ![Diagrama de Classe](diagramas/diagrama-de-classe.jpg)
+
+ ##Protótipo
+  Protótipo Inicial: 
+
+  ![Tela Inicial](prototipo/tela-inicial.jpg)
+  ![Cadastro Pessoa Física](prototipo/cadastro-pessoa-física.jpg)
+  ![Cadastro Pessoa Jurídica](prototipo/cadastro-pessoa-jurídica.jpg)
+  ![Cadastro Professor](prototipo/cadastro-professor.jpg)
+  ![Cadastro Fornecedor](prototipo/cadastro-fornecedor.jpg)
+  ![Cadastro Aluno](protoripo/cadastro-aluno1.jpg)
+  ![Cadastro Preenchido](prototipo/cadastro-aluno2.jpg)
+  ![Cadastro Com Erro](prototipo/cadastro-pj-erro.jpg)
+  ![Cadastro Com Sucesso](prototipo/cadastro-pj-sucessp.jpg)
+  
+  
+  
+  
+ 
