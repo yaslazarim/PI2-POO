@@ -66,7 +66,7 @@ Tela Inicial:
   ![Cadastro Preenchido](prototipo/cadastro-aluno2.jpg)
   Cadastro com Erro:
   ![Cadastro Com Erro](prototipo/cadastro-pj-erro.jpg)
-  Cadastrocom Sucesso:
+  Cadastro com Sucesso:
   ![Cadastro Com Sucesso](prototipo/cadastro-pj-sucesso.jpg)
   
   
