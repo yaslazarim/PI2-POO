@@ -24,7 +24,7 @@ A modelagem foi feita utilizando diagramas UML para representar os principais el
 - **Diagrama de Casos de Uso**: Representa as interações entre os usuários e o sistema.  
 - **Diagrama de Classes**: Define a estrutura do sistema, incluindo as classes, atributos, métodos e relacionamentos.  
 
-### Implementação  
+### IMPLEMENTAÇÃO 
 O sistema foi desenvolvido utilizando a linguagem de programação **Java** e segue os princípios da Programação Orientada a Objetos, como encapsulamento, herança e polimorfismo. As principais classes do sistema incluem:  
 
 - **Pessoa**: Classe base que contém os atributos e métodos comuns a todas as entidades.  
@@ -32,7 +32,7 @@ O sistema foi desenvolvido utilizando a linguagem de programação **Java** e se
 - **Professor**: Subclasse de Pessoa, representa os professores cadastrados.  
 - **Fornecedor**: Classe que representa as empresas fornecedoras de serviços e produtos para a universidade.  
 
-### Banco de Dados  
+### BANCO DE DADOS
 O sistema utiliza um banco de dados relacional para armazenar as informações, garantindo a integridade e consistência dos dados. A persistência foi implementada utilizando **JDBC** para conexão com o banco de dados.  
 
 ---
@@ -40,23 +40,33 @@ O sistema utiliza um banco de dados relacional para armazenar as informações, 
 ## CONCLUSÃO  
 O desenvolvimento deste sistema permitiu aplicar conceitos de análise e modelagem de sistemas orientados a objetos, além de boas práticas de programação e banco de dados. O sistema proporciona uma solução eficiente para o gerenciamento de cadastros na universidade, permitindo maior controle e organização das informações.  
 
-## Diagramas
-   Diagramas da primeira fase do projeto:
-   
+## DIAGRAMAS
+
+Diagrama de Casos de Uso:
  ![Diagrama de Caso de Uso](diagramas/casos-de-uso.jpg)
+ 
+ Diagrama de Classe:
  ![Diagrama de Classe](diagramas/diagrama-de-classe.jpg)
 
- ## Protótipo
-  Protótipo Inicial: 
-
+ ## PROTÓTIPO I 
+   
+Tela Inicial:
   ![Tela Inicial](prototipo/tela-inicial.jpg)
+ Cadastro Pessoa Física:
   ![Cadastro Pessoa Física](prototipo/cadastro-pessoa-física.jpg)
+  Cadastro Pessoa Jurídica:
   ![Cadastro Pessoa Jurídica](prototipo/cadastro-pessoa-jurídica.jpg)
+  Cadastro Professor:
   ![Cadastro Professor](prototipo/cadastro-professor.jpg)
+  Cadastro Fornecedor:
   ![Cadastro Fornecedor](prototipo/cadastro-fornecedor.jpg)
-  ![Cadastro Aluno](protoripo/cadastro-aluno1.jpg)
+  Cadastro Aluno:
+  ![Cadastro Aluno](prototipo/cadastro-aluno1.jpg)
+  Cadastro Aluno Preenchido:
   ![Cadastro Preenchido](prototipo/cadastro-aluno2.jpg)
+  Cadastro com Erro:
   ![Cadastro Com Erro](prototipo/cadastro-pj-erro.jpg)
+  Cadastrocom Sucesso:
   ![Cadastro Com Sucesso](prototipo/cadastro-pj-sucesso.jpg)
   
   
