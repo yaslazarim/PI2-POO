@@ -1,27 +1,23 @@
-<?php
+<?php 
 
 require_once('../db/connection.php');
 require('../utils/helpers.php');
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    try {
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    try{
         $con = getConnection();
-
         $data = getBody();
-
         $con->beginTransaction();
-
-        $stmt = $con->prepare("INSERT INTO aluno (
-                            matricula, 
-                            curso, 
+        
+        $stmt = $con->prepare("INSERT INTO professor (
+                            disciplina,
                             nome, 
                             cpf, 
                             email, 
                             contato, 
                             administrador_id
                         ) VALUES (
-                            :matricula, 
-                            :curso, 
+                            :disciplina,
                             :nome, 
                             :cpf, 
                             :email, 
@@ -30,8 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         )");
 
         $stmt->execute([
-            "matricula" => random_int(0, 1000),
-            "curso" => $data['curso'],
+            "disciplina" => $data['disciplina'],
             "nome" => $data['nome'],
             "cpf" => $data['cpf'],
             "email" => $data['email'],
@@ -39,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             "administrador_id" => $data['administrador_id'],
         ]);
 
-        $alunoId = $con->lastInsertId();
+        $professorId = $con->lastInsertId();
 
         $stmt = $con->prepare("INSERT INTO endereco (
                             cep,
@@ -68,26 +63,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $enderecoId = $con->lastInsertId();
 
-        $stmt = $con->prepare("INSERT INTO aluno_endereco (aluno_id, endereco_id) VALUES (:aluno_id, :endereco_id)");
+        $stmt = $con->prepare("INSERT INTO professor_endereco (professor_id, endereco_id) VALUES (:professor_id, :endereco_id)");
 
         $stmt->execute([
-            "aluno_id" => $alunoId,
+            "professor_id" => $professorId,
             "endereco_id" => $enderecoId
         ]);
 
         $con->commit();
 
         sendResponse(
-            message: "Aluno cadastrado com sucesso!",
-            data: ['endereco_id' => $enderecoId, 'aluno_id' => $alunoId],
+            message: "Professor cadastrado com sucesso!",
+            data:['endereco_id' => $enderecoId, 'professor_id' => $professorId],
             error: false
         );
-    } catch (\Throwable $th) {
+    }catch(\Throwable $th){
         $con->rollBack();
         sendResponse(
-            message: "Erro ao cadastrar aluno.",
+            message: "Erro ao cadastrar Professor.",
             data: null,
             error: true
         );
+        exit;
     }
 }
