@@ -22,3 +22,7 @@ function getBody(): array
     $data = json_decode($body, true);
     return $data;
 }
+
+function isAuth(){
+    return isset($_COOKIE['auth']);
+}

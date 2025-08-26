@@ -3,6 +3,17 @@
 require_once('../db/connection.php');
 require('../utils/helpers.php');
 
+if(!isAuth()){
+    http_response_code(401);
+
+    sendResponse(
+        message: "Não autorizado!",
+        data: null,
+        error: true
+    );
+    exit;
+}
+
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     try{
         $con = getConnection();
