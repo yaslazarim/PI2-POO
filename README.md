@@ -68,7 +68,68 @@ Tela Inicial:
   ![Cadastro Com Erro](prototipo/cadastro-pj-erro.jpg)
   Cadastro com Sucesso:
   ![Cadastro Com Sucesso](prototipo/cadastro-pj-sucesso.jpg)
-  
+
+###  Visão do Produto
+
+O sistema tem como objetivo centralizar e organizar o cadastro de entidades (pessoas físicas e jurídicas) em uma instituição de ensino, promovendo eficiência e segurança nos processos.
+
+**Objetivos principais:**
+
+- Reduzir erros operacionais (como duplicidade e dados incorretos);
+- Garantir a integridade dos dados;
+- Agilizar cadastros e atualizações;
+- Facilitar o acesso aos dados pela administração.
+
+**Problemas resolvidos:**
+
+- Processos manuais sujeitos a erros;
+- Dificuldade de manter um banco de dados organizado para diferentes perfis.
+
+**Funcionalidades:**
+
+- Cadastro de entidades físicas e jurídicas;
+- Validação de CPF, CNPJ e campos obrigatórios;
+- Interface simples e intuitiva.
+
+---
+
+###  Personas
+
+#### Administradora — Ana Clara, 32 anos
+- **Ocupação:** Assistente Administrativa  
+- **Necessidades:** Agilidade e organização nos cadastros  
+- **Desafios:** Cadastros inconsistentes e retrabalho  
+- **Como o sistema ajuda:** Validação automática e interface intuitiva
+
+#### Professor — José Almeida, 63 anos
+- **Ocupação:** Professor de TI  
+- **Necessidades:** Atualizar dados corretamente  
+- **Desafios:** Processos de atualização lentos  
+- **Como o sistema ajuda:** Garantia de dados válidos e processo facilitado
+
+---
+
+### Jornada das Personas
+
+#### Ana Clara (Administradora)
+
+| Etapa               | Ação                      | Ponto de Contato           | Dificuldades                  |
+|---------------------|---------------------------|-----------------------------|-------------------------------|
+| Login               | Acessa o sistema          | Tela de login               | Esquecimento de senha         |
+| Escolher cadastro   | Seleciona o tipo          | Menu principal              | Seleção incorreta             |
+| Preencher formulário| Insere dados              | Formulário de cadastro      | Dados incorretos              |
+| Validação           | Sistema valida os dados   | Tela de feedback            | CPF/CNPJ inválido             |
+| Salvar              | Clica em "Salvar"         | Botão de salvar             | -                             |
+| Confirmação         | Visualiza mensagem final  | Tela de confirmação         | -                             |
+
+#### José Almeida (Professor)
+
+| Etapa               | Ação                         | Ponto de Contato           | Dificuldades                  |
+|---------------------|------------------------------|-----------------------------|-------------------------------|
+| Solicitar Cadastro  | Envia dados à administração  | Atendimento online/presencial| Dados incorretos             |
+| Conferência         | Recebe confirmação           | E-mail e celular            | Não receber retorno           |
+| Correções           | Solicita alterações          | Atendimento                 | Dados errados                |
+| Atualização         | Dados atualizados no sistema | Sistema                     | -                             |
   
   
   
